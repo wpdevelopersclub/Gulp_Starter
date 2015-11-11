@@ -53,6 +53,8 @@ To add the dependencies that are needed for the individual gulp tasks to your pr
 cat gulp/dependencies | xargs npm install --save-dev
 ```
 
+The file `gulp/dependencies` can be safely deleted after this operation, it is no longer needed.
+
 ## Usage
 
 To get an overview of the available tasks that are provided with this starter setup, run the following command in your project's root folder:
