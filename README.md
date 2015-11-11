@@ -101,6 +101,8 @@ function wpdc_stylesheet_uri( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 * `gulp dist` has not been completed yet.
 
+* There currently seems to be a race condition between Sass & PostCSS. Thanks to @iCaspar for the testing & debugging.
+
 * If you are getting errors while pulling in the dependencies as described in the section "Installation", make sure that you are running a current version of `npm`. The latest stable one should always be correct, as of this writing, the code has been tested with version 3.3.9.
 To get the current version, type the command `npm -v` at your command-line.
 It is also a good idea to clear your npm's cache, as it might contain old versions of the packages we're trying to use. To clear your cache, type `npm cache clean` at your command-line.
