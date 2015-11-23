@@ -13,7 +13,7 @@
 
 var gulp = require( 'gulp' );
 
-gulp.task( 'styles-sass', function () {
+gulp.task( 'styles-sass', function ( cb ) {
 
 	var sass         = require( 'gulp-sass' );
 	var filter       = require( 'gulp-filter' );
@@ -31,5 +31,7 @@ gulp.task( 'styles-sass', function () {
 		.on( 'error', handleErrors )
 
 		.pipe( gulp.dest( config.dest ) );
+
+	cb();
 
 } );

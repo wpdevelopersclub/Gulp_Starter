@@ -13,7 +13,7 @@
 
 var gulp = require( 'gulp' );
 
-gulp.task( 'scripts-lint', function ( cb ) {
+gulp.task( 'scripts-lint', function () {
 
 	var jshint       = require( 'gulp-jshint' );
 	var changed      = require( 'gulp-changed' );
@@ -26,7 +26,5 @@ gulp.task( 'scripts-lint', function ( cb ) {
 		.on( 'error', handleErrors )
 		.pipe( jshint.reporter( 'default' ) )
 		.on( 'error', handleErrors );
-
-	cb();
 
 } );
